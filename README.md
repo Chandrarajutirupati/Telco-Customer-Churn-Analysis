@@ -1,10 +1,14 @@
 📊 Telco Customer Churn Analysis
+
+
 Project Overview
+
 Customer churn refers to customers who stop using a company's services. Customer retention is one of the most important business challenges in the telecommunications industry. This project analyzes customer behavior and builds a machine learning model to predict whether a customer is likely to churn.
 The project uses the Telco Customer Churn dataset and applies data preprocessing, feature engineering, machine learning, and model evaluation techniques to identify customers at risk of leaving the company.
 
 
 🎯 Objectives
+
 Analyze customer churn patterns.
 Identify factors that influence customer retention.
 Build a predictive machine learning model.
@@ -13,6 +17,7 @@ Generate business insights that can help reduce customer churn.
 
 
 📁 Dataset Information
+
 The dataset contains customer information such as:
 Gender
 
@@ -77,13 +82,18 @@ Jupyter Notebook
 
 
 📊 Data Preprocessing
+
+
 The following preprocessing steps were performed:
+
 1. Handling Missing Values
 Checked for missing values.
 Cleaned and converted data types where necessary.
 
 2. Encoding Categorical Variables
-Most columns contained categorical values such as:
+
+3. Most columns contained categorical values such as:
+
 Plain text
 
 Gender
@@ -130,7 +140,7 @@ train_test_split(X, y, test_size=0.2, random_state=0)
 
 
 5. Feature Scaling
-Standardization was applied using StandardScaler.
+6. Standardization was applied using StandardScaler.
 Python
 from sklearn.preprocessing import StandardScaler
 
@@ -146,7 +156,9 @@ This helps machine learning algorithms perform efficiently.
 
 
 🤖 Machine Learning Model
+
 Random Forest Classifier
+
 Random Forest is an ensemble learning algorithm that combines multiple decision trees to improve prediction accuracy and reduce overfitting.
 Python
 from sklearn.ensemble import RandomForestClassifier
@@ -161,6 +173,7 @@ y_pred = clf.predict(X_test)
 
 
 📈 Model Evaluation
+
 Accuracy Score
 Python
 from sklearn.metrics import accuracy_score
@@ -175,6 +188,7 @@ The model correctly predicted customer churn status for approximately 78% of cus
 
 
 📉 Confusion Matrix
+
 A confusion matrix was used to evaluate classification performance.
 Python
 from sklearn.metrics import confusion_matrix
@@ -191,6 +205,7 @@ and provides deeper insight into prediction quality.
 
 
 🔍 Key Insights
+
 1. Contract Type Matters
 Customers with month-to-month contracts tend to churn more frequently compared to customers with long-term contracts.
 2. Tenure Influences Retention
@@ -210,6 +225,7 @@ Different internet service plans demonstrate different churn patterns.
 
 
 📊 Business Impact
+
 This model can help telecommunication companies:
 Identify high-risk customers.
 Improve customer retention strategies.

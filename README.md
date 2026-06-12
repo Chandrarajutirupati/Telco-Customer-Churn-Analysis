@@ -2,12 +2,16 @@
 Project Overview
 Customer churn refers to customers who stop using a company's services. Customer retention is one of the most important business challenges in the telecommunications industry. This project analyzes customer behavior and builds a machine learning model to predict whether a customer is likely to churn.
 The project uses the Telco Customer Churn dataset and applies data preprocessing, feature engineering, machine learning, and model evaluation techniques to identify customers at risk of leaving the company.
+
+
 🎯 Objectives
 Analyze customer churn patterns.
 Identify factors that influence customer retention.
 Build a predictive machine learning model.
 Evaluate model performance using classification metrics.
 Generate business insights that can help reduce customer churn.
+
+
 📁 Dataset Information
 The dataset contains customer information such as:
 Gender
@@ -38,6 +42,8 @@ Matplotlib
 Seaborn
 Scikit-Learn
 Jupyter Notebook
+
+
 📊 Data Preprocessing
 The following preprocessing steps were performed:
 1. Handling Missing Values
@@ -82,6 +88,8 @@ Feature scaling transforms data to:
 Mean = 0
 Standard Deviation = 1
 This helps machine learning algorithms perform efficiently.
+
+
 🤖 Machine Learning Model
 Random Forest Classifier
 Random Forest is an ensemble learning algorithm that combines multiple decision trees to improve prediction accuracy and reduce overfitting.
@@ -94,6 +102,8 @@ clf.fit(X_train, y_train)
 Prediction
 Python
 y_pred = clf.predict(X_test)
+
+
 📈 Model Evaluation
 Accuracy Score
 Python
@@ -104,6 +114,8 @@ Result
 Plain text
 Model Accuracy = 78%
 The model correctly predicted customer churn status for approximately 78% of customers in the test dataset.
+
+
 📉 Confusion Matrix
 A confusion matrix was used to evaluate classification performance.
 Python
@@ -116,6 +128,8 @@ True Negatives
 False Positives
 False Negatives
 and provides deeper insight into prediction quality.
+
+
 🔍 Key Insights
 1. Contract Type Matters
 Customers with month-to-month contracts tend to churn more frequently compared to customers with long-term contracts.
@@ -131,6 +145,8 @@ Device Protection
 show lower churn tendencies.
 5. Internet Service Type Plays a Role
 Different internet service plans demonstrate different churn patterns.
+
+
 📊 Business Impact
 This model can help telecommunication companies:
 Identify high-risk customers.
@@ -138,5 +154,7 @@ Improve customer retention strategies.
 Reduce revenue loss caused by customer churn.
 Design personalized offers and loyalty programs.
 Improve customer satisfaction.
+
+
 
 In this project, customer churn data was analyzed and preprocessed using Python and Scikit-Learn. A Random Forest Classifier was trained to predict customer churn and achieved approximately 78% accuracy on the test dataset. The analysis revealed important factors affecting churn, including contract type, tenure, monthly charges, and support-related services. The developed model can assist telecommunication companies in proactively identifying customers likely to leave and implementing retention strategies to improve business performance.
